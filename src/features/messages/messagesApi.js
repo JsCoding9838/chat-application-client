@@ -12,7 +12,7 @@ export const messagesApi = apiSlice.injectEndpoints({
                     { updateCachedData, cacheDataLoaded, cacheEntryRemoved }
                 ) {
                     // create socket
-                    const socket = io("https://jubayer-chat-application.herokuapp.com/", {
+                    const socket = io("https://jubayer-chat-application.herokuapp.com", {
                         reconnectionDelay: 1000,
                         reconnection: true,
                         reconnectionAttemps: 10,
